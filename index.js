@@ -27,14 +27,8 @@ function loginPrompt(username, password, role){
 loginPrompt();
 let userLogin = loginPrompt(username, password, role);
 
-// function computeAverage(num1, num2, num3, num4){
-// 	sum = num1 + num2 + num3 + num4;
-// 	average = sum/4;
-// };
-
 function checkAverage(num1, num2, num3, num4){
-	sum = num1 + num2 + num3 + num4;
-	average = sum/4;
+	average = Math.round((num1 + num2 + num3 + num4)/ 4);
 
 	if(average >= 96){
 		console.log("Hello, student, your average is: " + average + ". The letter equivalent is A+");
@@ -55,6 +49,4 @@ function checkAverage(num1, num2, num3, num4){
 		console.log("Hello, student, your average is: " + average + ". The letter equivalent is F");
 	}
 };
-
 checkAverage();
-let grades = checkAverage(98, 97, 96, 98);
